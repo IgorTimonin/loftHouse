@@ -140,6 +140,11 @@ a:hover {
   font-weight: 700;
 }
 
+.link-bold {
+  color: #d4c17f;
+  font-weight: 700;
+}
+
 .header {
   position: relative;
   padding-top: 30px;
@@ -157,10 +162,16 @@ a:hover {
        column-gap: 40px;
 }
 
+.nav {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
 .nav__list {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  letter-spacing: 0.05em;
 }
 
 .intro {
@@ -231,7 +242,18 @@ a:hover {
 }
 
 .benefits {
+  position: relative;
   padding: 120px 0;
+}
+.benefits::after {
+  content: "II";
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  line-height: 1.15;
 }
 
 .benefits__row {
@@ -252,6 +274,21 @@ a:hover {
   font-size: 20px;
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
+}
+
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1.15;
 }
 
 .apartments__title {
@@ -376,7 +413,19 @@ a:hover {
 }
 
 .video {
+  position: relative;
   text-align: center;
+}
+.video::after {
+  content: "IV";
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  line-height: 1.15;
 }
 
 .video__link {
@@ -420,7 +469,19 @@ a:hover {
   }
 }
 .position {
+  position: relative;
   padding: 180px 0;
+}
+.position::before {
+  content: "V";
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 180px;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1.15;
 }
 
 .position__title {
@@ -444,5 +505,46 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  align-items: center;
+}
+
+.footer {
+  background-color: #2d343c;
+  padding: 72px 0 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  display: block;
+  margin-top: -12px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
   align-items: center;
 }/*# sourceMappingURL=main.css.map */
